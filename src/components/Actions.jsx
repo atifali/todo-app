@@ -39,7 +39,7 @@ function Actions(props) {
         toggleSaveModal();
     };
 
-    const apiEndpoint = import.meta.env.VITE_API_ENDPOINT + ':' + import.meta.env.VITE_API_PORT;
+    const apiEndpoint = import.meta.env.VITE_API_ENDPOINT;
     useEffect(() => {
         if (todosObj != null) {
             fetch(apiEndpoint + '/api/todos?id=' + todosObj.id, {

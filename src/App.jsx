@@ -8,7 +8,7 @@ function App() {
   const [todosId, setTodosId] = useState("");
   const [todos, setTodos] = useState([]);
 
-  const apiEndpoint = import.meta.env.VITE_API_ENDPOINT + ':' + import.meta.env.VITE_API_PORT;
+  const apiEndpoint = import.meta.env.VITE_API_ENDPOINT;
   useEffect(() => {
     const currentPathName = window.location.pathname;
     if (currentPathName != '/') {
