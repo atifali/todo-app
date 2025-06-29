@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.grippy {
+    width: 20px;
+    line-height: 5px;
+    margin-top: -.7em;
+    margin-right: .3em;
+    font-size: 15px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    color: #cccccc;
+    text-shadow: 1px 0 1px black;
+}
+
+.grippy::after {
+    content: '.. .. .. ..';
+}
