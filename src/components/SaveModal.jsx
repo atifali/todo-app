@@ -32,7 +32,7 @@ function SaveModal(props) {
                         <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                             <label className="font-light text-gray-800 mt-2 mb-3">Use the link below to access your todo list:</label>
                             <input type="text" value={props.todosUrl} className="w-full outline-none 
-                                font-extralight rounded bg-gray-100 p-2 mt-2 mb-3" disabled />
+                                font-extralight rounded bg-gray-100 p-2 mt-2 mb-3"readOnly />
                         </div>
                         <div className="flex bg-gray-200 px-4 py-3 text-right">
                             {copySuccess && <p className="py-2 px-4">{copySuccess}</p>}
